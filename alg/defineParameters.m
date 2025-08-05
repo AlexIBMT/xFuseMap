@@ -11,7 +11,7 @@
 % Copyright Alexander Hammer, TU Dresden, 31.07.2025
 
 %% GENERAL PARAMETERS
-sp.pxFuseMap     = 0; % 0: don't plot xFuseMaps; 1: plot xFuseMaps
+sp.pxFuseMap     = 1; % 0: don't plot xFuseMaps; 1: plot xFuseMaps
 
 sp.plotFalseClassifications = 0; % plot relevance for false classifications
                 
@@ -41,8 +41,8 @@ clr.f0      = 0;            % factor of third color channel (combined relevance)
 clr.f_lw    = 2.5;            % factor for line thickness in relation to relevance
 
 clr.bs = [1 1 1];       % color center, standard: [0 0 0] = black
-clr.m1 = [1 1 0];       % color model 1 > orange
-clr.m2 = [0 1 1];       % color model 2 > blue
+clr.m1 = [0 1 1];       % color model 1 > orange
+clr.m2 = [1 1 0];       % color model 2 > blue
 clr.bg = [1 1 1]*0.6;   % color background > gray
 clr.f0 = 0.6;
 

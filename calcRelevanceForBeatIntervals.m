@@ -78,7 +78,7 @@ clear('dt')
 if sp.pxFuseMap
     for n = 1:nn
         % load data (amplitude and relevance values [sig, relv])
-        load(fullfile(pth.dat,rec,rec(n)+".mat"));
+        load(fullfile(pth.dat,'rec',rec(n)+".mat"));
     
         % time axis
         x = (1:numel(sig))/meta.Fs(n);
@@ -109,7 +109,7 @@ if sp.pxFuseMap
     
         % save
         fnm_temp = rec(n)+"_label-"+string(labels_full(n))+"_class-"+join(string(dec(n,:)),"-");
-        exportgraphics(fig,fullfile(pth.plt,"plots",fnm_temp+".pdf"),...
+        exportgraphics(fig,fullfile(pth.plt,fnm_temp+".pdf"),...
             'ContentType','vector')
     
         % close figure
